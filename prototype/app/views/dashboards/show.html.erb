@@ -1,0 +1,19 @@
+Dashboard:<br><br>
+
+
+<br><br><br>
+Listings:<br><br>
+<% @listings.each do |listing| %>
+	<%= listing.title %><br>
+	<% listing.questions.each do |question| %>
+		<%= question.question %><br>
+		<%= questions?(question) %><br><br>
+	<% end %>
+
+	<%= listing.offers.each do |offer| %>
+
+		<%= currency(offer.price) %>
+		<%= status?(offer) %>
+		
+	<% end %>
+<% end %>

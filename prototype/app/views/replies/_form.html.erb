@@ -1,0 +1,5 @@
+<%= form_for Reply.new do |f| %>
+	<%= f.text_field :reply %>
+	<%= f.hidden_field :question_id, value: question %>
+	<%= f.submit %>	
+<% end %>

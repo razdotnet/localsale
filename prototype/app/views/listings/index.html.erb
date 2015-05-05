@@ -1,0 +1,4 @@
+<% @listing.each do |listing| %>
+	<%= link_to listing.title, listing_path(listing) %>
+	<br><br>
+<% end %>

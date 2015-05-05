@@ -1,0 +1,11 @@
+Offers for my listings.<br>
+<% @listing.each do |listing| %>
+	<%= listing.offers.each do |offer| %>
+
+	<% end %>
+<% end %>
+<br><br>
+My sent offers.<br>
+<%= @sent_offers.each do |offer| %>
+
+<% end %>

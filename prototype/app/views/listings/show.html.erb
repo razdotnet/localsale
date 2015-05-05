@@ -1,0 +1,20 @@
+<%= @listing.user.id %>
+<%= @listing.title %><br><br>
+
+<%= link_to 'offer', listing_offer_path(@listing) %>
+
+<br><br><br>
+
+<br><br>
+
+<% if creator?(@listing) %>
+	<%= render 'offers/offers' %>
+	<% else %>
+	nothing here.
+<% end %>
+	
+<br><br><br>
+
+<%= render 'questions/form' %>
+
+<br><br>

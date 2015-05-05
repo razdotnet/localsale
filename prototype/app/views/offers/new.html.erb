@@ -1,0 +1,5 @@
+<%= form_for @offer, url: listing_process_path do |f| %>
+	<%= f.number_field :price %>
+	<%= f.hidden_field :user_id, value: current_user.id %>
+	<%= f.submit %>
+<% end %>
